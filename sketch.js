@@ -5,11 +5,11 @@ var buttontwo;
 var img;
 
 function preload() {
-  img = loadImage("assets/IMG_6749.jpg")
+  img = loadImage("RecruitmentHeadshot.jpg")
 }
 
 function setup() {
-  myParagraph = createP("BeReal.");
+  myParagraph = createP("Title TBD");
   myParagraph.position(150,30);
 
   paragraghTwo = createP("Like this photo to move on to the next.")
@@ -24,5 +24,5 @@ function setup() {
 
 
 function draw() {
-image(img, 100, 200)
+image(img, 100, 200, 100, 100)
 }

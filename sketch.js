@@ -1,28 +1,33 @@
 var myParagraph;
 var paragraghTwo;
+var paragraphThree
 var myButton;
 var buttontwo;
 var img;
 
-function preload() {
-  img = loadImage("RecruitmentHeadshot.jpg")
-}
-
 function setup() {
+  noCanvas();
   myParagraph = createP("Title TBD");
-  myParagraph.position(150,30);
+  myParagraph.position(270,30);
 
   paragraghTwo = createP("Like this photo to move on to the next.")
-  paragraghTwo.position(60,330);
+  paragraghTwo.position(200,530);
  
-  myButton = createButton("Like");
-  myButton.position(100, 300);
+  let button = createButton ("Like");
+  button.mouseClicked(clicked);
+  button.position(250,500);
+  
 
-  buttontwo = createButton("Dislike");
-  buttontwo.position (200, 300);
+  let buttontwo = createButton("Dislike");
+  buttontwo.mouseClicked(clickedtoo);
+  buttontwo.position (325, 500);
 }
 
-
-function draw() {
-image(img, 100, 200, 100, 100)
+function clicked () {
+  let p = createP("TIME TO POST")
+  p.position(random(500), random (500));
 }
+function clickedtoo () {
+  let p2 = createP("TIME TO POST")
+  p2.position(random(500), random (500));
+  }
